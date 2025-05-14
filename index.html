@@ -11,25 +11,41 @@
 </head>
 <body>
   <header class="header">
-     <a href="tel:+70000000">+7(000)000-00-00</a><br>
-     <a href="mailto:mail@example.com">mail@example.com</a>
-    
-    <div id="overlay"></div>
+    <nav class="header__menu">
+      <address class="header__address">
+       <ul class="header__links-list">
+      
+         <a class="header__links-list-item" href="tel:+9 999 555 5555">+9 999 555 5555</a><br>
+         <a class="header__links-list-item_no-bullit" href="info@sobaka.ge">info@sobaka.ge</a>
+         <li class="header__link">наб. Принсенграхт 263- 265, Амстердам</li>
+           <div class="header__logo">
+             <img src="./images/logo-black.svg" alt="Логотип чёрный!" />
+          </div>
+        <li>    
+         <a href="">Главная</a><br>
+         <a href="">посмотреть лоты</a>
+        <p>об аукционе</p>
+       </li>
+    </ul>
+  </address>
+  </nav>
   </header>
 
   <section class="cover">
+    <div id="overlay"></div>
     <img src=".\images\cover.jpg" alt="Живопись" />
-    <h1 class="cover_title">
-     <span class="aligned-text">ОНО</span>
-     <span class="aligned-text">ТЕБЕ</span>
-     <span class="aligned-text">НАДО</span>
-    </h1>
-  </section>
-    <div class=".description">описание
-     <p>параграф</p>
-    <button>СДЕЛАТЬ СТАВКУ</button>
+     <h1 class="cover_title">
+        <span class="aligned-text">ОНО</span>
+        <span class="aligned-text aligned-text_center">ТЕБЕ</span>
+        <span class="aligned-text">НАДО</span>
+     </h1>
+    <div class="cover__description">
+      <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+      <button class="bet-button">СДЕЛАТЬ СТАВКУ</button>
     </div>
-<div>
+  </section>
+  
+<main>
 <h2>ЛОТЫ</h2>
 <ul class="lots">
    <li class="card">
@@ -54,20 +70,23 @@
     </article>
   </li>
 </ul>
-</div>
+</main>
 </header>
 <footer class="footer">
-  <p>+9 999 555 5555</p>
-  <p>info@sobaka.ge</p>
-  <p>наб. Принсенграхт 263-265, Амстердам</p>
-  <h4>главная </h4>
-  <p>посмотреть лоты</p>
-  <p>об аукционе</p>
+ <div class="about">
+   <p>+9 999 555 5555</p>
+   <p class="header__links-list-item_no-bullit">info@sobaka.ge</p>
+   <p>наб. Принсенграхт 263-265, Амстердам</p>
+   <h4>главная </h4>
+   <p>посмотреть лоты</p>
 
-  <div>контейнер из логотипов</div>
+   <p>об аукционе</p>
+  </div>
+
+  <div>контейнер из</div>
 
 
 </footer> 
 </body>
-  </head>
 </html>
+

@@ -1,23 +1,73 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items:center;
+    padding: 10px 40px 0 40px;
+    gap:inherit;
+    list-style:circle;
+  }
+
+.header__menu{
+
+}
+.header__links-list{
+
+}
+.header__links-list-item_no-bullit{
+
+}
+.header__logo{
+display: flex;
+width: 20%;
+grid-template-columns: 1fr min-content 1fr;
+margin-left: auto;
+}
+
+
 .cover {
     position: relative;
     height: 575px;
     width: 1100px;
     background-image: url(..image/cover.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
+    z-index: 1;
     
     }
     
-    #overlay{
+    #overlay{        
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: black;
-    z-index: 1;
+    background: rgb(5, 5, 5);
+    z-index: -1;
+    } 
     
+    .cover__description{
+
+
+    }
+    cover__description-text{
+
+    }
+    .bet-button{
+    display: inline;
+    }
+
+
+    .lots {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: -1;
+    }
+
+    .card {
+    display: flex;
+
     }
     
     .cover_title{
@@ -42,6 +92,9 @@
     line-height: 115%;
     text-transform: uppercase;
     
+    }
+    .aligned-text_center{
+
     }
     footer {
         border-top: 1px dotted #fd24af;
