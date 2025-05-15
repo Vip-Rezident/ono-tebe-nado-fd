@@ -22,7 +22,7 @@ gap: 32px;
 }
 
 .header__links-list-item_no-bullit{
-    list-style: none;
+list-style: none;
 
 }
 .header__logo{
@@ -44,6 +44,15 @@ margin-left: auto;
     z-index: 1;
     
     }
+    .cover_title{
+        height: 385px;
+        right: 50px;
+        left: 50px;
+        top: 165px;
+        bottom: 207px;
+        margin: 165px 40px 105px 50px;
+    
+        }
     
     #overlay{        
     position: absolute;
@@ -76,20 +85,68 @@ margin-left: auto;
     z-index: -1;
     }
 
+    .about{
+    width: 1052;
+    height: 595;
+    top: 2073px;
+    left: 24px;
+
+    }
+    .about__title{
+    width: 291;
+    height: 47;
+    top: 3px;
+
+    }
+    .about__text{
+    width: 688;
+    height: 120;
+    top: 150px;
+
+    }
+
+    .about__logo-image{
+    
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    left: 4.42px;
+    
+        
+        
+    }
+
+    .about__logo {
+   
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid black;
+    
+          
+
+    }
+
     .card {
     display: flex;
 
     }
-    
-    .cover_title{
-    height: 385px;
-    right: 50px;
-    left: 50px;
-    top: 165px;
-    bottom: 207px;
-    margin: 165px 40px 105px 50px;
+    .card__title{
+        width: 121;
+        height: 47;
+        left: 40px;
+        color: black;
+ 
+       }
+    .card__text{
+    width: 254;
+    height: 144;
+    top: 404px;
+    left: 40px;
 
-    }
+    }   
+    
     
     .aligned-text{
     display: block;
@@ -112,3 +169,4 @@ margin-left: auto;
         border-top: 1px dotted #fa0e0e;
         padding: 20px 40px;
       }
+    
