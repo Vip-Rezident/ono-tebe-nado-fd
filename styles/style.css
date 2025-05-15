@@ -2,18 +2,27 @@ header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items:center;
-    padding: 10px 40px 0 40px;
-    gap:inherit;
+    padding: 91px 50px 91px 50px;
+    gap: 10px;
     list-style:circle;
   }
 
 .header__menu{
+list-style: none;
 
 }
+
 .header__links-list{
+display: flex;
+list-style:circle;
+font-size: 18px;
+text-transform: lowercase;
+gap: 32px;
 
 }
+
 .header__links-list-item_no-bullit{
+    list-style: none;
 
 }
 .header__logo{
@@ -47,19 +56,21 @@ margin-left: auto;
     } 
     
     .cover__description{
-
-
-    }
-    cover__description-text{
+     word: spacing 28px;
 
     }
+    .cover__description-text{
+    list-style: none;
+
+    }
+
     .bet-button{
-    display: inline;
+    background-color: transparent;
     }
-
 
     .lots {
     display: flex;
+    height: 100%;
     flex-direction: row;
     justify-content: space-between;
     z-index: -1;
@@ -94,9 +105,10 @@ margin-left: auto;
     
     }
     .aligned-text_center{
+    list-style: none;
 
     }
     footer {
-        border-top: 1px dotted #fd24af;
+        border-top: 1px dotted #fa0e0e;
         padding: 20px 40px;
       }
