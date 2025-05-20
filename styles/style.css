@@ -109,8 +109,8 @@ margin-left: auto;
       text-align: center;
       }
     
-    .aligned-text_center__no-letter-spacing{
-      text-align: right;                 /*Как то подвинуть в право*/
+    .aligned-text__no-letter-spacing{
+     padding-right: 50px;               /*Как то подвинуть в право*/
     }
     
     .cover__description{
@@ -167,7 +167,10 @@ margin-left: auto;
     .lots{
       flex-direction: column;
       justify-content: space-between;
-      box-sizing: border-box;       /* Не точно */
+      box-sizing: border-box;
+      padding-top: 180px;
+      padding-left: 24px;
+      padding-right: 24px;       /* Не точно */
       
     }
 
@@ -253,14 +256,14 @@ margin-left: auto;
     .about {
       display: grid;
       grid-template-columns: 1fr min-content 1fr;
-      align-items:center;
+      align-items: center;
       padding: 91px 50px 91px 50px;
       gap: 240px;
       list-style: circle;
     }
     .about__column{
-      width: 100%;
-      
+     width: 100%;
+     
     }
 
     .about__text p:first-of-type{
@@ -268,25 +271,25 @@ margin-left: auto;
 
     }
     .about__column p{
-      width: 100%;}
+      width: 100%;
       
-    
-      .about__logo-image{
-       width: 148;
-       height: 114;
-      }
-
-      .about_logo{
+    }
+    .about__logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 240px;
+      height: 240px;
       background-color: #000000;
       border-radius: 50%;
-      right: 765xp;
-      height: 240px;
-      width: 240px;
-      margin-left: 47px;
-      padding: 64px 46px 62px 46px;
-      
-      
+    }
+       
+    .about__logo-image{
+     width: 141px;
+     height: 112px;
+     
       }
+   
       .about__title{
         margin-left: 25px;
         margin-top: 100px;
