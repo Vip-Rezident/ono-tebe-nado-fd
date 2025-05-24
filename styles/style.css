@@ -44,6 +44,7 @@ header {
   max-width: 1100px;
   justify-self: end;
   font-weight:normal;
+  font-style: normal;
   text-underline-position: under;
   padding-right: 55px;
 }
@@ -184,13 +185,14 @@ header {
   text-transform: uppercase;
   line-height: 100%;
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 700px;
   padding-left: 40px;
   padding-bottom: 27px;
 }
 
 .lots__card-list {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   gap: 25px;
   list-style-type: none;
@@ -200,8 +202,8 @@ header {
 
 .lots__card-list-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  
 }
 
 .lots__look-more-link {
@@ -215,7 +217,7 @@ header {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  
   width: 334px;
   height: 596px;
   background-repeat: repeat;
@@ -241,19 +243,21 @@ header {
   font-weight: 700;
   text-decoration-line: underline;
   text-transform: uppercase;
+
   color: #ffffff;
   z-index: 2;
 }
 
 .card__text {
-  padding-bottom: 48px;
+  display: flex;
   padding-right: 40px;
   padding-left: 40px;
   font-style: normal;
+  font-size: 20px;
   font-family: "Ralaway", "Arial", "sans-serif";
-  justify-content: end;
+  justify-content:end;
   line-height: 120%;
-  font-weight: 400;
+  font-weight: 400px;
   color: #ffffff;
   z-index: 2;
 }
@@ -276,11 +280,12 @@ header {
   align-items: center;
   gap: 72px;
   list-style: circle;
-  margin: 130px 24px 0 24px;
+  margin: 128px 24px 0 24px;
   height: 595px;
 }
 .about__column {
   width: 100%;
+  padding-bottom: 180px;
 }
 
 .about__text p:first-of-type {
@@ -301,7 +306,7 @@ header {
   border-radius: 50%;
   margin-left: 47px;
   margin-top: 35px;
-  margin-bottom: 410px;
+  margin-bottom: 570px;
 }
 
 .about__logo-image {
