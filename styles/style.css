@@ -23,7 +23,7 @@ header {
   gap: 33px;
 }
 .header__links-list-item {
-  list-style: none;
+  list-style-type: circle;
 }
 
 .header__link {
@@ -35,23 +35,24 @@ header {
   text-decoration: none;
 }
 .header__link_active {
-  text-decoration: none;   /*Ссылка без подчёркивания*/
+  text-decoration: none; /*Ссылка без подчёркивания*/
 }
 
-.address { /*жирность 1px*/
+.address {
+  /*жирность 1px*/
   display: block;
-  padding-bottom: 15px;
   max-width: 1100px;
   justify-self: end;
-  font-weight:normal;
+
   font-style: normal;
+  font-size: 18px;
   text-underline-position: under;
-  padding-right: 55px;
+  padding-right: 36px;
 }
 
 .address a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3.3px;
+  text-decoration-thickness: 1px; /*Толщина подчёркивания*/
+  text-underline-offset: 3.5px;
 }
 
 .header__logo {
@@ -64,8 +65,8 @@ header {
 
 .header__logo-image {
   /*Размер логотипа*/
-  width: 129, 11px;
-  height: 104, 65px;
+  width: 148px;
+  height: 104px;
 }
 
 .header__links-list-item_no-bullit {
@@ -81,7 +82,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 1;
 }
 .cover_title {
   padding-top: 165px;
@@ -95,7 +95,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 100px;
+  margin-bottom: 100px;
 }
 .cover__description-text {
   position: relative;
@@ -161,7 +161,7 @@ header {
 }
 
 .overlay {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -185,14 +185,14 @@ header {
   text-transform: uppercase;
   line-height: 100%;
   font-size: 40px;
-  font-weight: 700px;
+  font-weight: 700;
   padding-left: 40px;
   padding-bottom: 27px;
 }
 
 .lots__card-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   gap: 25px;
   list-style-type: none;
@@ -202,8 +202,6 @@ header {
 
 .lots__card-list-item {
   display: flex;
-  
-  
 }
 
 .lots__look-more-link {
@@ -216,14 +214,14 @@ header {
 
 .card {
   display: flex;
+  position: relative;
   flex-direction: column;
-  
+  justify-content: space-between;
   width: 334px;
-  height: 596px;
+  height: 100%;
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  z-index: 1;
 }
 
 .card-link {
@@ -243,26 +241,26 @@ header {
   font-weight: 700;
   text-decoration-line: underline;
   text-transform: uppercase;
-
+  align-content: space-between;
   color: #ffffff;
   z-index: 2;
 }
 
 .card__text {
-  display: flex;
+  padding-bottom: 48px;
   padding-right: 40px;
   padding-left: 40px;
   font-style: normal;
-  font-size: 20px;
   font-family: "Ralaway", "Arial", "sans-serif";
-  justify-content:end;
+  justify-content: end;
   line-height: 120%;
-  font-weight: 400px;
+  font-size: 20px;
   color: #ffffff;
   z-index: 2;
 }
 
-.card_type_film { /*локальное подключение карточек*/
+.card_type_film {
+  /*локальное подключение карточек*/
   background-image: url(../images/card-lot-01.jpg);
 }
 
@@ -353,7 +351,6 @@ header {
   justify-content: space-between;
   margin: 0 50px 0 50px;
   padding: 180px 0 115px 0;
-  
 }
 
 .footer_address {
@@ -394,7 +391,7 @@ header {
   list-style: none;
 }
 
-.footer__social-list-item { 
+.footer__social-list-item {
   width: 48px;
   height: 48px;
 }
