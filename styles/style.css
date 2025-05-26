@@ -337,7 +337,7 @@ header {
   font-family: "Raleway", "Arial", "sans-serif";
   font-style: normal;
   line-height: 24px;
-  letter-spacing: .5px;
+  letter-spacing: .15px;
   color: #000000;
   padding-bottom: 90px;
 }
@@ -355,7 +355,7 @@ header {
   justify-content: space-between;
   align-content: center;
   margin: 2px 50px 0 50px;
-  padding: 180px 0 115px 0;
+  padding: 180px 0 120px 0;
 }
 
 .footer_address {
@@ -364,12 +364,13 @@ header {
   justify-self: end;
   font-size: 18px;
   font-style: normal;
+  
 }
 
 .footer__menu {
   display: flex;
   justify-content: space-between;
-  text-underline-offset: 5px;
+  text-underline-offset: 3px;
 }
 
 .footer__menu-list {
