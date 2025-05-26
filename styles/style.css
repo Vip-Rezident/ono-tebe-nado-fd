@@ -43,7 +43,7 @@ header {
   justify-self: end;
   font-size: 18px;
   font-style: normal;
-  padding-right: 36px;
+  padding-right: 35px;
 }
 
 .address a {
@@ -79,15 +79,17 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 2;
 }
 
 .cover_title {
+  position: relative;
   font-size: 100px;
   padding-top: 165px;
   margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 89px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .cover__description {
@@ -107,7 +109,7 @@ header {
   letter-spacing: 0;
   line-height: 0; /*межстрочное расстояние*/
   color: #ffff;
-  z-index: 1;
+  z-index: 2;
 }
 
 .aligned-text {
@@ -117,11 +119,11 @@ header {
   font-family: "Raleway", "Arial", "sans-serif";
   font-weight: 700px;
   font-style: normal;
-  letter-spacing: 0.3em; /*межбуквенное растояние*/
+  letter-spacing: .3em; /*межбуквенное растояние*/
   line-height: 115%;
   text-transform: uppercase;
   color: #fff;
-  z-index: 1;
+  z-index: 2;
 }
 
 .aligned-text__no-letter-spacing {
@@ -171,7 +173,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -213,6 +215,7 @@ header {
   font-family: "Raleway", "Arial", "sans-serif";
   margin-left: 40px;
   padding-top: 30px;
+  text-underline-offset: 5px; /*растояние от текста до подчёркивания*/
 }
 
 .card {
@@ -225,6 +228,7 @@ header {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
+  z-index: 2;
 }
 
 .card-link {
@@ -234,7 +238,7 @@ header {
 }
 
 .card__title {
-  padding: 48px 40px 48px 40px;
+  padding: 48px 40px 30px 40px;
   position: relative;
   line-height: 22px;
   font-size: 22px;
@@ -279,7 +283,7 @@ header {
   align-items: center;
   gap: 72px;
   list-style: circle;
-  margin: 128px 24px 0 24px;
+  margin: 120px 24px 0 24px;
   height: 595px;
 }
 .about__column {
@@ -304,13 +308,13 @@ header {
   background-color: #000000;
   border-radius: 50%;
   margin-left: 47px;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-bottom: 570px;
 }
 
 .about__logo-image {
-  width: 141px;
-  height: 112px;
+  width: 141.54px;
+  height: 112.55px;
 }
 
 .about__title {
@@ -333,6 +337,7 @@ header {
   font-family: "Raleway", "Arial", "sans-serif";
   font-style: normal;
   line-height: 24px;
+  letter-spacing: .5px;
   color: #000000;
   padding-bottom: 90px;
 }
@@ -348,22 +353,23 @@ header {
 .footer {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px 0 50px;
+  align-content: center;
+  margin: 2px 50px 0 50px;
   padding: 180px 0 115px 0;
 }
 
 .footer_address {
   display: block;
-  margin-bottom: 10px;
   max-width: 1100px;
   justify-self: end;
-  margin-right: 50px;
   font-size: 18px;
+  font-style: normal;
 }
 
 .footer__menu {
   display: flex;
   justify-content: space-between;
+  text-underline-offset: 5px;
 }
 
 .footer__menu-list {
