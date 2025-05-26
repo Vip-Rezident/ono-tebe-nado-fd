@@ -287,7 +287,6 @@ header {
 }
 
 .about__text p:first-of-type {
-  text-underline-offset: 3.5px; 
   margin-bottom: 24px;
 }
 .about__column p {
