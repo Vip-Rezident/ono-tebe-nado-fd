@@ -226,10 +226,11 @@ header {
   z-index: 2;
 }
 
-.card-link {
+.card_link {
   display: block;
   height: 100%;
   width: 100%;
+  text-decoration: none;
 }
 
 .card__title {
@@ -255,10 +256,12 @@ header {
   justify-content: end;
   color: #ffffff;
   z-index: 2;
+  
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg); /*локальное подключение карточек*/
+  
 }
 
 .card_type_book {
