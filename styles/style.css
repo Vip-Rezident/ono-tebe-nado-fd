@@ -23,7 +23,7 @@ header {
   gap: 33px;
 }
 .header__links-list-item {
-  list-style-type: circle;
+  text-underline-position: under; /*подчёркивание под текстом*/
 }
 
 .header__link {
@@ -31,28 +31,25 @@ header {
 }
 
 .header__links-list-item_no-bullit {
-  list-style: none;
-  text-decoration: none;
+  list-style: none; /*Ссылка без кружочка*/
 }
 .header__link_active {
   text-decoration: none; /*Ссылка без подчёркивания*/
 }
 
 .address {
-  /*жирность 1px*/
   display: block;
   max-width: 1100px;
   justify-self: end;
-
-  font-style: normal;
   font-size: 18px;
-  text-underline-position: under;
+  font-style: normal;
   padding-right: 36px;
 }
 
 .address a {
-  text-decoration-thickness: 1px; /*Толщина подчёркивания*/
-  text-underline-offset: 3.5px;
+  text-decoration-thickness: 1px; /*жирность подчёркивания*/
+  text-underline-offset: 2px;
+  letter-spacing: 0;
 }
 
 .header__logo {
@@ -70,10 +67,10 @@ header {
 }
 
 .header__links-list-item_no-bullit {
-  /*Ссылка без кружочка*/
   text-decoration: none;
   border-bottom: 0;
 }
+
 .cover {
   position: relative;
   height: 757px;
@@ -83,12 +80,14 @@ header {
   background-size: cover;
   background-position: center;
 }
+
 .cover_title {
+  font-size: 100px;
   padding-top: 165px;
   margin-right: 50px;
   margin-left: 50px;
-  margin-bottom: 105px;
-  z-index: 2;
+  margin-bottom: 89px;
+  z-index: 1;
 }
 
 .cover__description {
@@ -97,28 +96,43 @@ header {
   align-items: center;
   margin-bottom: 100px;
 }
+
 .cover__description-text {
   position: relative;
   display: flex;
   text-transform: uppercase;
   font-size: 22px;
   line-height: 22px;
-  color: #ffff;
   word-spacing: 20px;
-  z-index: 2;
+  letter-spacing: 0;
+  line-height: 0; /*межстрочное расстояние*/
+  color: #ffff;
+  z-index: 1;
 }
 
 .aligned-text {
   display: block;
   padding-bottom: 20px;
-  color: #fff;
-  font-family: "Ralaway", "Arial", "sans-serif";
-  font-weight: 700px;
   font-size: 100px;
+  font-family: "Raleway", "Arial", "sans-serif";
+  font-weight: 700px;
   font-style: normal;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.3em; /*межбуквенное растояние*/
   line-height: 115%;
   text-transform: uppercase;
+  color: #fff;
+  z-index: 1;
+}
+
+.aligned-text__no-letter-spacing {
+  /*ОНО*/
+  padding-right: 50px;
+}
+
+.no-letter-spacing {
+  /*Буква "О"*/
+  letter-spacing: 0; /*Обнуление межбуквенного расстояния*/
+  margin-right: 50px;
   z-index: 2;
 }
 
@@ -128,6 +142,7 @@ header {
   text-align: center;
   justify-content: center;
   padding-left: 35px;
+  z-index: 2;
 }
 .aligned-text_right {
   /*НАДО*/
@@ -135,18 +150,8 @@ header {
   z-index: 2;
 }
 
-.aligned-text__no-letter-spacing {
-  padding-right: 50px;
-}
-
-.no-letter-spacing {
-  /*Буква "О"*/
-  letter-spacing: 0; /*Обнуление межстрочного расстояния*/
-  margin-right: 50px;
-  z-index: 2;
-}
-
 .bet-button {
+  /*Кнопка*/
   display: block;
   border: 1px solid #ffff;
   background-color: transparent;
@@ -155,12 +160,12 @@ header {
   color: #ffff;
   min-width: 256px;
   min-height: 51px;
-  font-weight: 500;
   font-size: 22px;
   z-index: 2;
 }
 
 .overlay {
+  /*Прозрачность*/
   position: absolute;
   top: 0;
   left: 0;
@@ -180,14 +185,13 @@ header {
 }
 
 .lots__heading {
-  color: #000000;
-  font-family: "Ralaway", "Arial", "sans-serif";
+  font-family: "Raleway", "Arial", "sans-serif";
   text-transform: uppercase;
   line-height: 100%;
   font-size: 40px;
-  font-weight: 700;
   padding-left: 40px;
   padding-bottom: 27px;
+  color: #000000;
 }
 
 .lots__card-list {
@@ -196,8 +200,7 @@ header {
   flex-direction: row;
   gap: 25px;
   list-style-type: none;
-  padding: 0; /* Убираем стандартный отступ списка */
-  margin: 0; /* Убираем стандартный отступ списка */
+  
 }
 
 .lots__card-list-item {
@@ -205,9 +208,9 @@ header {
 }
 
 .lots__look-more-link {
-  font-style: normal;
   font-size: 20px;
-  font-family: "Ralaway", "Arial", "sans-serif";
+  font-style: normal;
+  font-family: "Raleway", "Arial", "sans-serif";
   margin-left: 40px;
   padding-top: 30px;
 }
@@ -218,7 +221,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   width: 334px;
-  height: 100%;
+  height: 596px;
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -233,12 +236,11 @@ header {
 .card__title {
   padding: 48px 40px 48px 40px;
   position: relative;
-  font-family: "Ralaway", "Arial", "sans-serif";
-  font-style: normal;
   line-height: 22px;
   font-size: 22px;
+  font-family: "Raleway", "Arial", "sans-serif";
+  font-style: normal;
   line-height: 120%;
-  font-weight: 700;
   text-decoration-line: underline;
   text-transform: uppercase;
   align-content: space-between;
@@ -250,18 +252,17 @@ header {
   padding-bottom: 48px;
   padding-right: 40px;
   padding-left: 40px;
+  font-size: 20px;
   font-style: normal;
-  font-family: "Ralaway", "Arial", "sans-serif";
+  font-family: "Raleway", "Arial", "sans-serif";
   justify-content: end;
   line-height: 120%;
-  font-size: 20px;
   color: #ffffff;
   z-index: 2;
 }
 
 .card_type_film {
-  /*локальное подключение карточек*/
-  background-image: url(../images/card-lot-01.jpg);
+  background-image: url(../images/card-lot-01.jpg); /*локальное подключение карточек*/
 }
 
 .card_type_book {
@@ -287,7 +288,7 @@ header {
 }
 
 .about__text p:first-of-type {
-  /*межстрочное растояние*/
+  text-underline-offset: 3.5px; /*межстрочное растояние*/
   margin-bottom: 24px;
 }
 .about__column p {
@@ -315,25 +316,23 @@ header {
 .about__title {
   margin-left: 0;
   margin-bottom: 0;
-  font-family: "Ralaway", "Arial", "sans-serif";
+  font-size: 40px;
+  font-family: "Raleway", "Arial", "sans-serif";
   font-style: normal;
   text-transform: uppercase;
   text-decoration-line: underline;
   text-decoration: none;
   width: 702px;
-  font-size: 40px;
   line-height: 120%;
-  font-weight: 700;
   line-height: 47px;
   padding: 136px 402px 100px 0;
 }
 .about__text {
   position: relative;
-  font-family: "Ralaway", "Arial", "sans-serif";
-  font-style: normal;
   font-size: 20px;
+  font-family: "Raleway", "Arial", "sans-serif";
+  font-style: normal;
   line-height: 24px;
-  font-weight: 400;
   color: #000000;
   padding-bottom: 90px;
 }
@@ -366,14 +365,15 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 .footer__menu-list {
   display: block;
   justify-content: center;
+  font-size: 18px;
   text-align: center;
   list-style: none; /*убрать точки*/
   text-decoration: none;
-  font-family: "Ralaway", "Arial", "sans-serif";
-  font-size: 18px;
+  font-family: "Raleway", "Arial", "sans-serif";
 }
 
 .footer__menu-link {
