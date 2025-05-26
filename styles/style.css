@@ -68,7 +68,7 @@ header {
 
 .header__links-list-item_no-bullit {
   text-decoration: none;
-  border-bottom: 0;
+  
 }
 
 .cover {
@@ -259,7 +259,6 @@ header {
   font-style: normal;
   font-family: "Raleway", "Arial", "sans-serif";
   justify-content: end;
-  line-height: 120%;
   color: #ffffff;
   z-index: 2;
 }
