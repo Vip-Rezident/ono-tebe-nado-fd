@@ -44,9 +44,10 @@ header {
   font-size: 18px;
   font-style: normal;
   padding-right: 35px;
+  line-height: 1.3;
 }
 
-.address a {
+.address__footer_address a {
   text-decoration-thickness: 1px; /*жирность подчёркивания*/
   text-underline-offset: 2px;
   letter-spacing: 0;
@@ -283,7 +284,7 @@ header {
 }
 
 .about__text p:first-of-type {
-  text-underline-offset: 3.5px; /*межстрочное растояние*/
+  text-underline-offset: 3.5px; 
   margin-bottom: 24px;
 }
 .about__column p {
@@ -354,7 +355,7 @@ header {
   justify-self: end;
   font-size: 18px;
   font-style: normal;
-  
+  line-height: 1.4;
 }
 
 .footer__menu {
