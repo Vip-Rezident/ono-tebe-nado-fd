@@ -66,11 +66,6 @@ header {
   height: 104px;
 }
 
-.header__links-list-item_no-bullit {
-  text-decoration: none;
-  
-}
-
 .cover {
   position: relative;
   height: 757px;
@@ -248,7 +243,6 @@ header {
   text-transform: uppercase;
   align-content: space-between;
   color: #ffffff;
-  z-index: 2;
 }
 
 .card__text {
@@ -326,7 +320,6 @@ header {
   text-decoration: none;
   width: 702px;
   line-height: 120%;
-  line-height: 47px;
   padding: 136px 402px 100px 0;
 }
 .about__text {
