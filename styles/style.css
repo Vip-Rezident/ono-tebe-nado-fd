@@ -166,7 +166,7 @@ header {
   box-sizing: border-box;
   padding-top: 133px;
   margin-right: 24px;
-  margin-left: 24px; /* Не точно */
+  margin-left: 24px; 
   z-index: 1;
 }
 
@@ -207,21 +207,21 @@ header {
   position: relative;
   flex-direction: column;
   justify-content: space-between;
-  width: 334px;
-  height: 596px;
+  min-width: 334px; /* гибко адаптирует элемент под контент */
+  min-height: 596px;
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
 }
 
-.card_link {
+.card_link { /* ссылка карточки */
   display: block;
   height: 100%;
   width: 100%;
   text-decoration: none;
 }
 
-.card__title {
+.card__title { /* Титульник */
   padding: 48px 40px 30px 40px;
   position: relative;
   font-size: 22px;
@@ -236,7 +236,7 @@ header {
   z-index: 2;
 }
 
-.card__text {
+.card__text { /* текст карточки */
   padding-bottom: 48px;
   padding-right: 40px;
   padding-left: 40px;
@@ -249,7 +249,7 @@ header {
 }
 
 .card_type_film {
-  background-image: url(../images/card-lot-01.jpg); /*локальное подключение карточек*/
+  background-image: url(../images/card-lot-01.jpg); /*локальное подключение изображения карточек*/
 }
 
 .card_type_book {
@@ -267,11 +267,11 @@ header {
   gap: 72px;
   list-style: circle;
   margin: 150px 24px 0 24px;
-  height: 595px;
+  
 }
 .about__column {
   width: 100%;
-  padding-bottom: 180px;
+  padding-bottom: 0;
 }
 
 .about__text p:first-of-type {
@@ -291,7 +291,7 @@ header {
   border-radius: 50%;
   margin-left: 47px;
   margin-top: 25px;
-  margin-bottom: 570px;
+  margin-bottom: 301px;
 }
 
 .about__logo-image {
@@ -319,7 +319,7 @@ header {
   line-height: 24px;
   letter-spacing: 0.15px;
   color: #000000;
-  padding-bottom: 90px;
+  padding-bottom: 0;
 }
 
 .about__text-paragraph {
@@ -334,7 +334,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  margin: 2px 50px 0 50px;
+  margin: 0 50px 0 50px;
   padding: 180px 0 120px 0;
 }
 
