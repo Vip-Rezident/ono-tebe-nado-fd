@@ -47,7 +47,7 @@ header {
   line-height: 1.3;
 }
 
-.address__footer_address a {
+.address__footer_address {
   text-decoration-thickness: 1px; /*жирность подчёркивания*/
   text-underline-offset: 2px;
   letter-spacing: 0;
@@ -112,7 +112,7 @@ header {
   padding-bottom: 20px;
   font-size: 100px;
   font-family: "Raleway", "Arial", "sans-serif";
-  font-weight: 700px;
+  font-weight: 700;
   font-style: normal;
   letter-spacing: .3em; /*межбуквенное растояние*/
   line-height: 115%;
@@ -163,7 +163,7 @@ header {
 
 .overlay {
   /*Прозрачность*/
-  position: relative;
+  position:absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -208,9 +208,11 @@ header {
   font-size: 20px;
   font-style: normal;
   font-family: "Raleway", "Arial", "sans-serif";
+  color: #000000;
   margin-left: 40px;
   padding-top: 30px;
   text-underline-offset: 5px; /*растояние от текста до подчёркивания*/
+
 }
 
 .card {
@@ -240,6 +242,7 @@ header {
   font-family: "Raleway", "Arial", "sans-serif";
   font-style: normal;
   line-height: 120%;
+  text-underline-offset: 5px;
   text-decoration-line: underline;
   text-transform: uppercase;
   align-content: space-between;
@@ -278,7 +281,7 @@ header {
   align-items: center;
   gap: 72px;
   list-style: circle;
-  margin: 120px 24px 0 24px;
+  margin: 150px 24px 0 24px;
   height: 595px;
 }
 .about__column {
