@@ -277,9 +277,9 @@ header {
 }
 
 .about__text p:first-of-type {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 24px;  /* gap: 24px; не работает почему то..*/
 }
 .about__column p {
   padding-right: 3px;
@@ -326,20 +326,12 @@ header {
   padding-bottom: 0;
 }
 
-.about__text-paragraph {
-  margin-bottom: 179px;
-}
-
-.about__text-paragraph:last-child {
-  margin-bottom: 0px;
-}
-
 .footer {
   display: flex;
   justify-content: space-between;
   align-content: center;
   margin: 0 50px 0 50px;
-  padding: 180px 0 120px 0;
+  padding: 180px 0 0 0;
 }
 
 .footer_address {
