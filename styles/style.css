@@ -166,8 +166,7 @@ header {
   box-sizing: border-box;
   padding-top: 133px;
   margin-right: 24px;
-  margin-left: 24px; 
-  z-index: 1;
+  margin-left: 24px;
 }
 
 .lots__heading {
@@ -189,11 +188,11 @@ header {
 }
 
 .lots__card-list-item {
-  display:flex;
+  display: flex;
 }
 
 .lots__look-more-link {
-  display:inline-block;
+  display: inline-block;
   font-size: 20px;
   font-style: normal;
   font-family: "Raleway", "Arial", "sans-serif";
@@ -215,14 +214,16 @@ header {
   background-position: center;
 }
 
-.card_link { /* ссылка карточки */
+.card_link {
+  /* ссылка карточки */
   display: block;
   height: 100%;
   width: 100%;
   text-decoration: none;
 }
 
-.card__title { /* Титульник */
+.card__title {
+  /* Титульник */
   padding: 48px 40px 30px 40px;
   position: relative;
   font-size: 22px;
@@ -237,7 +238,8 @@ header {
   z-index: 2;
 }
 
-.card__text { /* текст карточки */
+.card__text {
+  /* текст карточки */
   padding-bottom: 48px;
   padding-right: 40px;
   padding-left: 40px;
@@ -268,7 +270,6 @@ header {
   gap: 72px;
   list-style: circle;
   margin: 120px 24px 0 24px;
-  
 }
 .about__column {
   width: 100%;
@@ -276,6 +277,8 @@ header {
 }
 
 .about__text p:first-of-type {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 24px;
 }
 .about__column p {
