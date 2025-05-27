@@ -53,7 +53,6 @@ header {
   display: block;
   width: 148px;
   height: 105px;
-  grid-template-columns: 1fr min-content 1fr;
   margin-left: auto;
 }
 
