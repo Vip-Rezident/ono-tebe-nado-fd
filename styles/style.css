@@ -84,7 +84,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .cover__description-text {
@@ -161,7 +161,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-top: 133px;
+  padding-top: 183px;
   margin-right: 24px;
   margin-left: 24px;
 }
