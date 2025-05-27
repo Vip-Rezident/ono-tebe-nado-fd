@@ -69,6 +69,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 .cover_title {
@@ -118,7 +119,6 @@ header {
   /*Буква "О"*/
   letter-spacing: 0; /*Обнуление межбуквенного расстояния*/
   margin-right: 50px;
-  z-index: 2;
 }
 
 .aligned-text_center {
@@ -127,12 +127,10 @@ header {
   text-align: center;
   justify-content: center;
   padding-left: 35px;
-  z-index: 2;
 }
 .aligned-text_right {
   /*НАДО*/
   margin-left: 610px;
-  z-index: 1;
 }
 
 .bet-button {
@@ -146,7 +144,6 @@ header {
   min-width: 256px;
   min-height: 51px;
   font-size: 22px;
-  z-index: 1;
 }
 
 .overlay {
@@ -212,6 +209,7 @@ header {
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
+  z-index: 1;
 }
 
 .card_link {
