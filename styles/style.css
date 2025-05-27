@@ -189,10 +189,11 @@ header {
 }
 
 .lots__card-list-item {
-  display: flex;
+  display:flex;
 }
 
 .lots__look-more-link {
+  display:inline-block;
   font-size: 20px;
   font-style: normal;
   font-family: "Raleway", "Arial", "sans-serif";
@@ -266,7 +267,7 @@ header {
   align-items: center;
   gap: 72px;
   list-style: circle;
-  margin: 150px 24px 0 24px;
+  margin: 120px 24px 0 24px;
   
 }
 .about__column {
