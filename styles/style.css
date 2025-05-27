@@ -263,7 +263,7 @@ header {
 
 .about {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: min-content 1fr; /* делит вертикально контент на 2 блока */
   align-items: center;
   gap: 72px;
   list-style: circle;
