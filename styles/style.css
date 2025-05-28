@@ -80,11 +80,11 @@ header {
   padding-bottom: 89px;
 }
 
-.cover__description { 
+.cover__description {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 50px;  /* Высота изображения */
+  padding-bottom: 50px; /* Высота изображения */
 }
 
 .cover__description-text {
@@ -92,7 +92,7 @@ header {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 22px;
-  word-spacing: .8em; /* Расстояние между словами */
+  word-spacing: 0.8em; /* Расстояние между словами */
   letter-spacing: 0;
   color: #ffff;
 }
@@ -104,7 +104,7 @@ header {
   font-family: "Raleway", "Arial", "sans-serif";
   font-weight: 700;
   font-style: normal;
-  letter-spacing: .3em; /*межбуквенное растояние*/
+  letter-spacing: 0.3em; /*межбуквенное растояние*/
   line-height: 115%;
   text-transform: uppercase;
   color: #fff;
@@ -229,9 +229,9 @@ header {
   font-family: "Raleway", "Arial", "sans-serif";
   font-style: normal;
   line-height: 120%;
-  text-underline-offset: 5px;       /* подчёркивание от текста 5px */
+  text-underline-offset: 5px; /* подчёркивание от текста 5px */
   text-decoration-line: underline; /* подчёркивание */
-  text-transform: uppercase;      /* верхний регистр */
+  text-transform: uppercase; /* верхний регистр */
   align-content: space-between;
   color: #ffffff;
 }
@@ -275,7 +275,7 @@ header {
 
 .about__text p:first-of-type {
   justify-content: space-between;
-  margin-bottom: 24px;  /* gap: 24px; не работает почему то..*/
+  margin-bottom: 24px; /* gap: 24px; не работает почему то..*/
 }
 .about__column p {
   padding-right: 3px;
