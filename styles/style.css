@@ -186,6 +186,7 @@ header {
 
 .lots__card-list-item {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .lots__look-more-link {
@@ -233,7 +234,6 @@ header {
   text-transform: uppercase;      /* верхний регистр */
   align-content: space-between;
   color: #ffffff;
-  z-index: 2;
 }
 
 .card__text {
@@ -246,7 +246,6 @@ header {
   font-family: "Raleway", "Arial", "sans-serif";
   justify-content: end;
   color: #ffffff;
-  z-index: 2;
 }
 
 .card_type_film {
@@ -370,9 +369,7 @@ header {
   list-style: none;
 }
 
-.footer__social-list-item { /*Хорошим решением будет указать ширину/высоту непосредственно для самой иконки. 
-Для этого можно создать дополнительный класс. 
-*/
+.footer__social-icon {
   width: 48px;
   height: 48px;
 }
