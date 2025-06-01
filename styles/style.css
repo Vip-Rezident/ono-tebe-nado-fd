@@ -45,7 +45,8 @@ header {
   width: 100%;
   font-size: 18px;
   font-style: normal;
-  line-height: 1.3em; /* Высота строки */
+  line-height: 1.35em; /* Высота строки */
+  text-underline-offset: 4px;
 }
 
 .address_type_header {
@@ -334,8 +335,6 @@ header {
 
 .address_type_footer {
   max-width: 243px;
-  line-height: 1.35em;
-  text-underline-offset: 5px;
 }
 
 .footer__menu {
