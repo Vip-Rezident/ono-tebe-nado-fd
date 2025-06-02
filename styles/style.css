@@ -162,6 +162,7 @@ header {
 }
 
 .lots {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
@@ -182,15 +183,14 @@ header {
 
 .lots__card-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   flex-direction: row;
   gap: 25px;
   list-style-type: none;
 }
 
 .lots__card-list-item {
-  display: flex;
-  flex-wrap: wrap;
+  max-width: 334px;
 }
 
 .lots__look-more-link {
