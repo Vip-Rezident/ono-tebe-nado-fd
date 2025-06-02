@@ -183,14 +183,14 @@ header {
 
 .lots__card-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*Перенос на след строку*/
   flex-direction: row;
   gap: 25px;
   list-style-type: none;
 }
 
 .lots__card-list-item {
-  max-width: 334px;
+  max-width: 334px; /*Ширина карточки*/
 }
 
 .lots__look-more-link {
@@ -267,7 +267,7 @@ header {
 .about {
   display: grid;
   grid-template-columns: min-content 1fr; /* делит вертикально контент на 2 блока */
-  align-items: center;
+  align-items: start;
   gap: 72px;
   list-style: circle;
   margin: 120px 24px 0 24px;
@@ -279,7 +279,6 @@ header {
 
 .about__text p:first-of-type {
   justify-content: space-between;
-  margin-bottom: 24px; /* gap: 24px; не работает почему то..*/
 }
 .about__column p {
   padding-right: 3px;
@@ -294,8 +293,7 @@ header {
   background-color: #000000;
   border-radius: 50%;
   margin-left: 47px;
-  margin-top: 25px;
-  margin-bottom: 301px;
+  margin-top: 30px;
 }
 
 .about__logo-image {
@@ -316,7 +314,10 @@ header {
   padding: 136px 402px 100px 0;
 }
 .about__text {
+  display: flex;
+  flex-direction: column;
   font-size: 20px;
+  gap: 24px;
   font-family: "Raleway", "Arial", "sans-serif";
   font-style: normal;
   line-height: 24px;
