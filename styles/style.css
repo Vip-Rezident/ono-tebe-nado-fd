@@ -72,6 +72,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  margin-bottom: 183px;
   z-index: 1;
 }
 
@@ -166,9 +167,7 @@ header {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-top: 183px;
-  margin-right: 24px;
-  margin-left: 24px;
+  margin: 0 24px 120px 24px;
 }
 
 .lots__heading {
@@ -270,7 +269,7 @@ header {
   align-items: start; /* Поднял логотип на верх */
   gap: 72px; /* Разделитель между блоками (логотип/текст) */
   list-style: circle;
-  margin: 120px 24px 0 24px;
+  margin: 0 24px 180px 24px;
 }
 
 .about__column {
@@ -331,7 +330,7 @@ header {
   justify-content: space-between;
   align-content: center;
   margin: 0 50px 0 50px;
-  padding: 180px 0 82px 0;
+  padding: 0 0 82px 0;
 }
 
 .address_type_footer {
